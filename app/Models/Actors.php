@@ -19,4 +19,12 @@ class Actors extends Model
         'updated_at'
         
     ];
+   public function films()
+{
+    return $this->belongsToMany(Films::class, 'film_actor', 'actor_id', 'film_id')
+                ->withPivot('is_lead')
+                ->withTimestamps();
+}
+
+    
 }

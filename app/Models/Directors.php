@@ -18,4 +18,9 @@ class Directors extends Model
         'updated_at'
         
     ];
+
+     public function films()
+    {
+        return $this->hasMany(Films::class, 'director_id');
+    }
 }

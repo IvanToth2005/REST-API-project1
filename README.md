@@ -18,3 +18,18 @@
 | /directors   | POST        | Y    | new director added|
 | /directors   | PATCH       | Y    | edited director   |
 | /directors   | DELETE      | Y    | id                |
+
+| /directors/director/films| GET         |      | all films from directors    |
+| /actors/actor/films   | GET         |      | all films from actors     |
+| /films/film/actors   | GET         |      | all actors from films     |
+| /films/film/actors   | POST        | Y    | new actor to film|
+| /films/film/actors/actor   | PATCH       | Y    | edited actor to film   |
+| /films/film/actors/actor   | DELETE      | Y    | delete actor id from film                |
+| /films/film/directors   | GET         |      | all directors from films    |
+| /films/film/directors   | POST        | Y    | new director added to films|
+| /films/film/directors/director   | PATCH       | Y    | edited director to films   |
+| /films/film/directors/director   | DELETE      | Y    | delete director from films  |
+ 
+ 
+ 
+ 
