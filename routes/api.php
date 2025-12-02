@@ -23,6 +23,7 @@ Route::get('/films/{id}/directors', [FilmsController::class, 'getFilmDirector'])
 Route::post('/films/{id}/directors', [FilmsController::class, 'addFilmDirector'])->middleware('auth:sanctum');
 Route::patch('/films/{film}/directors/{director}', [FilmsController::class, 'updateFilmDirector'])->middleware('auth:sanctum');
 Route::delete('/films/{film}/directors/{director}', [FilmsController::class, 'removeFilmDirector'])->middleware('auth:sanctum');
+Route::put('/films/{id}', [FilmsController::class, 'update'])->middleware('auth:sanctum');
 
 Route::get('/series', [SeriesController::class, 'index']);
 Route::post('/series', [SeriesController::class, 'store'])->middleware('auth:sanctum');
